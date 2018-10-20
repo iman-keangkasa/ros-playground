@@ -1,0 +1,37 @@
+\documentclass[a4paper,10pt]{article}
+\title{Iman's \textit{\textbf{ROS}} to-do list}
+\author{Iman Hafiz}
+\usepackage{enumitem,amssymb}
+%	creating a new kind of list call todolist with two level of
+%	nesting based on itemize
+\newlist{todolist}{itemize}{1}
+\setlist[todolist]{label=$\square$}
+
+%	Adding checkmark and x mark to the checkbox
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+\hspace{-2.5pt}}
+
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+\begin{document}
+
+\maketitle
+
+\section{November 2018}
+\begin{itemize}
+		\item \textbf{BEFORE THE PRESENTATION}
+		\begin{todolist}
+		\item Create ROS URDF for IRB1400
+		\item Create a ROS node to provide service to do inverse kinematics
+		\item Create a ROS node to subscribe to service
+		\item verify the solution for forward kinematics and inverse kinematics in matlab
+		\item Create a ROS node to calculate forward kinematics and inverse kinematics
+		\item Create ROS launch file
+		\item Create A demo with your sensors
+		\item Start Beamer Latex
+		\end{todolist}
+\end{itemize}
+\end{document}
+
