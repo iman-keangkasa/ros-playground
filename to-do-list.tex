@@ -4,7 +4,7 @@
 \usepackage{enumitem,amssymb}
 %	creating a new kind of list call todolist with two level of
 %	nesting based on itemize
-\newlist{todolist}{itemize}{1}
+\newlist{todolist}{itemize}{3}
 \setlist[todolist]{label=$\square$}
 
 %	Adding checkmark and x mark to the checkbox
@@ -26,12 +26,29 @@
 		\item Create ROS URDF for IRB1400
 		\item Create a ROS node to provide service to do inverse kinematics
 		\item Create a ROS node to subscribe to service
-		\item verify the solution for forward kinematics and inverse kinematics in matlab
+		\item verify the solution for forward kinematics and%
+				inverse kinematics in matlab
 		\item Create a ROS node to calculate forward kinematics and inverse kinematics
+				\begin{todolist}
+				\item Orientatation and the solution for Euler, RPY%
+						and Rodrigues formula
+				\end{todolist}
 		\item Create ROS launch file
 		\item Create A demo with your sensors
-		\item Start Beamer Latex
+		\item Start Presentation slides: Beamer Latex
 		\end{todolist}
+
+		\item \textbf{BEFORE THE PRESENTATION:MATLAB VALIDATION}
+				\begin{todolist}
+				\item Validate forward kinematics (FK)
+						\begin{todolist}
+						\item Code and validate the orientation formula for%
+								Euler's, RPY, and Rodrigues formula
+						\end{todolist}
+				\item Code the inverse kinematics (IK)
+				\item Validate both the FK and the IK
+				\item Create a simple simulation from MATLAB? 
+				\end{todolist}
 \end{itemize}
 \end{document}
 
