@@ -18,7 +18,7 @@
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0.012"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
