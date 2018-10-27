@@ -1,7 +1,7 @@
 <robot
   name="base">
   <link
-    name="base_with_coordinate_system">
+    name="base">
     <inertial>
       <origin
         xyz="-0.11257 -4.1589E-05 0.057533"
@@ -18,11 +18,11 @@
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0"
+        xyz="0 0 0.012"
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://base_with_coordinate_system/meshes/base_with_coordinate_system.STL" />
+          filename="package://urdf_models/meshes/base.STL" />
       </geometry>
       <material
         name="">
@@ -32,11 +32,11 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0 0 0.012"
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://base_with_coordinate_system/meshes/base_with_coordinate_system.STL" />
+          filename="package://urdf_models/meshes/base.STL" />
       </geometry>
     </collision>
   </link>

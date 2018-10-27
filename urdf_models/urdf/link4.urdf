@@ -1,7 +1,7 @@
 <robot
   name="link4">
   <link
-    name="link4_fixed_coordinate">
+    name="link4">
     <inertial>
       <origin
         xyz="-5.9023E-14 -2.8014E-06 1.8685"
@@ -18,11 +18,11 @@
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0"
+        xyz="0 0 -1.684"
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://link4_fixed_coordinate/meshes/link4_fixed_coordinate.STL" />
+          filename="package://urdf_models/meshes/link4.STL" />
       </geometry>
       <material
         name="">
@@ -32,11 +32,11 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0 0 -1.684"
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://link4_fixed_coordinate/meshes/link4_fixed_coordinate.STL" />
+          filename="package://urdf_models/meshes/link4.STL" />
       </geometry>
     </collision>
   </link>
