@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- ADD PROTPERTIES AT ___-->
+<robot name="visual">
+		
+	<material name="___">
+		<color rgba="___ ___ ___ ___"/>
+	</material>
+
+	<link name="___">
+		<visual>
+			<geometry>
+				<cylinder length="___" radius="___"/>
+			</geometry>
+			<material name="___"/>
+		</visual>
+		
+	<link name="___">
+		<visual>
+		</visual>
+
+
+

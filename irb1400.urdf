@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<!-- ADD PROTPERTIES AT ___-->
+<robot name="irb1400">
+		
+	<material name="orange">
+			<color rgba="167 63 12 1"/>
+	</material>
+
+	<material name="silver">
+			<color rgba="92 88 87 1"/>
+	</material>
+
+	<link name="base">
+		<visual>
+			<geometry>
+				<cylinder length="___" radius="___"/>
+			</geometry>
+			<material name="___"/>
+		</visual>
+		
+	<link name="___">
+		<visual>
+		</visual>
+
+
+

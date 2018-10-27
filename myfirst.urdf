@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<robot name="tapak_kaki">
+	<material name="blue">
+		<color rgba="0 0 0.8 1"/>
+	</material>
+
+	<material name="white">
+			<color rgba="1 1 1 1"/>
+	</material>
+
+	<link name="tapak">
+		<visual>
+			<geometry>
+				<cylinder length="0.6" radius="0.2"/>
+			</geometry>
+			<material name="blue"/>
+		</visual>
+	</link>
+
+	<link name="kaki_kanan">
+		<visual>
+				<geometry>
+						<box size="0.6 0.1 0.2"/>
+				</geometry>
+				<!--setting rpy=(0,pi/2,0)    		  -->
+				<origin rpy="0 1.5707 0" xyz="0 0 -0.3"/>
+				<material name="white"/>
+		</visual>
+	</link>
+
+	<joint name="tapak_ke_kaki_kanak" type="fixed">
+			<parent link="tapak"/>
+			<child link="kaki_kanan"/>
+			<origin xyz="0 0.22 0.25"/>
+	</joint>
+</robot>
+
