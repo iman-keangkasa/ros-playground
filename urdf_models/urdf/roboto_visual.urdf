@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<robot name="roboto_visual">
+	<material name="orange">
+		<color rgba="0.756 0.3608 0.0392 1"/>
+	</material>
+
+	<material name="silver">
+		<color rgba="0.6157 0.8392 0.9411 1"/>
+	</material>
+
+	<link name="world"/>
+
+	<link name="base">
+		<visual>
+			<geometry>
+				<mesh filename="package://urdf_models/meshes/base.STL"/>
+			</geometry>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<material name="orange"/>
+		</visual>
+	</link>
+
+	<link name="link1">
+		<visual>
+			<geometry>
+				<mesh filename="package://urdf_models/meshes/link1.STL"/>
+			</geometry>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<material name="orange"/>
+		</visual>
+	</link>
+
+	<joint name="world_to_base" type="fixed">
+		<parent link="world"/>
+		<child link="base"/>
+		<origin xyz="0 0 0"/>
+	</joint>
+
+	<joint name="joint1" type="revolute">
+		<axis xyz="0 0 1"/>
+		<limit effort="1.0" lower="0.0" upper="1.9" velocity="5.0"/>
+		<origin rpy="0 0 0" xyz="0 0 0.0925"/>
+		<parent link="base"/>
+		<child link="link1"/>
+	</joint>
+</robot>
