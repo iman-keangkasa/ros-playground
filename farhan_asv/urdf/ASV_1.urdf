@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<robot
+  name="ASV">
+  <link
+    name="ASV">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="8" />
+      <inertia
+        ixx="0.00552323811335545"
+        ixy="1.35227839141931E-05"
+        ixz="0.00134956885224282"
+        iyy="0.0326489645545928"
+        iyz="-4.9522344751469E-06"
+        izz="0.0348123273508454" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ASV/meshes/ASV.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ASV/meshes/ASV.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
